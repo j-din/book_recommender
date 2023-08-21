@@ -40,14 +40,20 @@ RatingX is the individual's rating for that book on a -5 to 5 scale
 Function Descriptions
 
 BookRecommender::BookRecommender(string fileName)
-- Constructor that reads data from file
+Constructor that reads data from file
+
 void BookRecommender::printRecommend(string userName)
-- Prints book recommendations 
+Prints book recommendations for given name
+
 void BookRecommender::printAverages()
-- Displays average ratings for all books
+Displays average ratings for all books
+
 double BookRecommender::getAverage(string bookTitle)
-- Calculates the average rating for a single specified book
+Calculates the average rating for a single specified book
+
 double BookRecommender::getSimilarity(string userName1, string userName2)
-- Calculates similarity (dot product) between two users' ratings 
+Calculates similarity (dot product) between two users' ratings
+
 double BookRecommender::getUserBookRating(string userName, string bookTitle)
-- Retrieves rating that a user has given to a book 
+Retrieves rating that a user has given to a book
+ 
